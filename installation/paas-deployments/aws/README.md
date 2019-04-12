@@ -256,7 +256,7 @@ end script
 2. Wait a minute or so and login with SSH again
     `ssh -i <path_to_key_file.pem> ubuntu@<public_ip_address>`
 3. Check status of docker
-    sudo docker ps -a`
+    `sudo docker ps -a`
     - When it's up and running, you should see 2 images, one for Rocket.Chat and one for mongo.
     - If you don't see the containers yet, don't panic. It may take a few minutes to download and setup the containers. If you still don't see the images listed with the above `docker` command, check the logs of your upstart jobs.
   `sudo cat /var/log/upstart/rocketchat_mongo.log`
